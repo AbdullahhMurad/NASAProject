@@ -5,7 +5,7 @@ describe("Test GET /launches", () => {
     test("It should respond with 200 Success", async () => {
         const response = await request(app)
         .get("/launches")
-        .expect("Content-type", "/json/")
+        .expect("Content-type", /json/)
         .expect(200);
     });
 });
